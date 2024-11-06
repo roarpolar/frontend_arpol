@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo de corpo básico */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Acentua links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para os cards */
+.card-panel {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(241, 237, 175); /* Fundo branco para os cards */
+}
+
+/* Estilos para dispositivos móveis (largura de tela até 767px) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .sidebar {
+    display: none; /* Esconde a sidebar em dispositivos móveis */
+  }
+
+  .navbar {
+    font-size: 18px;
+  }
+
+  .card-panel {
+    width: 100%; /* Para ocupar toda a largura em dispositivos móveis */
+    margin: 10px 0;
+  }
+}
+
+/* Estilos para tablets (largura de tela entre 768px e 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .sidebar {
+    width: 200px; /* Ajusta a sidebar para tablets */
+  }
+
+  .card-panel {
+    width: 48%; /* Para organizar dois cards lado a lado */
+    margin: 10px 1%;
+  }
+}
+
+/* Estilos para desktops */
+@media (min-width: 1025px) {
+  .card-panel {
+    width: 23%; /* Para organizar quatro cards lado a lado em desktops */
+    margin: 10px 1%;
+  }
+
+  /* Ajusta o contêiner para centralizar os cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas em desktops */
+    justify-items: center; /* Centraliza os cards */
+  }
+}
+

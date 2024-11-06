@@ -1,0 +1,82 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed; /* Mantém a navbar fixa no topo da página */
+  top: 0;
+  left: 0; /* Deve ser igual à largura da sidebar */
+  right: 0; /* Ocupa toda a largura da tela menos a sidebar */
+  height: 60px; /* Altura da navbar */
+  background-color: #444; /* Cor de fundo da navbar */
+  color: #fff; /* Cor do texto */
+  display: flex; /* Utiliza flexbox para o layout */
+  align-items: center; /* Centraliza verticalmente os itens */
+  padding: 0 20px; /* Adiciona espaçamento nas laterais */
+  z-index: 1000; /* Garante que a navbar fique acima do conteúdo */
+}
+
+.navbar-container {
+  display: flex; /* Utiliza flexbox para o container */
+  justify-content: space-between; /* Espaça os itens da navbar */
+  width: 100%; /* Ocupa 100% da largura disponível */
+}
+
+.navbar-logo {
+  display: flex; /* Flexbox para o logo e o botão */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.navbar-menu-button {
+  background: none; /* Remove fundo do botão */
+  border: none; /* Remove borda do botão */
+  color: #fff; /* Cor do ícone */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  margin-right: 10px; /* Espaçamento à direita do botão */
+}
+
+.navbar-title {
+  font-size: 24px; /* Tamanho da fonte do título */
+  font-weight: bold; /* Negrito para o título */
+}
+
+.navbar-search-container {
+  flex: 1; /* Ocupa o espaço restante disponível */
+  display: flex; /* Flexbox para o search container */
+  justify-content: center; /* Centraliza o campo de busca */
+}
+
+.navbar-search {
+  position: relative; /* Para o ícone de busca */
+}
+
+.navbar-search-input {
+  width: 100%; /* Largura total do campo de busca */
+  padding: 10px; /* Espaçamento interno */
+  border: none; /* Remove borda */
+  border-radius: 4px; /* Borda arredondada */
+}
+
+.navbar-search-icon {
+  position: absolute; /* Para sobrepor ao campo de busca */
+  right: 10px; /* Espaçamento à direita */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajuste para centralização */
+}
+
+.navbar-actions {
+  display: flex; /* Flexbox para as ações */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.navbar-help-button {
+  background: none; /* Remove fundo do botão */
+  border: none; /* Remove borda do botão */
+  color: #fff; /* Cor do ícone */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  margin-right: 20px; /* Espaçamento à direita do botão */
+}
+
+.navbar-user {
+  display: flex; /* Flexbox para o usuário */
+  align-items: center; /* Centraliza verticalmente */
+  color: #fff; /* Cor do texto do usuário */
+}

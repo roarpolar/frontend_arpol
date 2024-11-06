@@ -1,0 +1,89 @@
+.sidebar {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  height: 100%;
+  width: 280px;
+  background-color: #d5dbca;
+  color: #333;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column; /* Alinha a logo e o texto em coluna */
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #c2c9b7;
+  border-bottom: 1px solid #b4bba9;
+  
+}
+
+.logo {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 125%;
+  font-weight: 800;
+  color: #4a5568;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 0.1rem; /* Adiciona um espaço entre a logo e o texto */
+}
+
+.sidebar-content {
+  padding: 0.75rem;
+  flex: 1;
+}
+
+.sidebar-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-content li {
+  margin: 0.25rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.sidebar-content li:hover {
+  color: #4a5568;
+  background-color: #c2c9b7;
+}
+
+.sidebar-content li ul {
+  padding-left: 1rem;
+  margin-top: 0.25rem;
+}
+
+.sidebar-content li ul li {
+  margin: 0.25rem 0;
+  color: #555;
+  font-size: 0.875rem;
+}
+
+.sidebar-content li ul li:hover {
+  color: #4a5568;
+  background-color: #c2c9b7;
+}
